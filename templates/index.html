@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NYC Hate Crimes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <script src="{{ url_for('static', filename='d3.v7.js') }}"></script>
+        <script src="{{ url_for('static', filename='visualizations.js') }}"></script>
+        <script src="{{ url_for('static', filename='visualize.js') }}"></script>
+    </head>
+    <body onload="dashboard()">
+        <div id="title">
+            <label for="dropdown">NYC Hate Crimes By </label>
+            <select id="dropdown">
+                <option value="Complaint Year Number" selected>Complaint Year Number</option>
+                <option value="Month Number">Month Number</option>
+                <option value="Patrol Borough Name">Patrol Borough Name</option>
+                <option value="County">County</option>
+                <option value="Law Code Category Description">Law Code Category Description</option>
+                <option value="Offense Description">Offense Description</option>
+                <option value="PD Code Description">PD Code Description</option>
+                <option value="Bias Motive Description">Bias Motive Description</option>
+                <option value="Offense Category">Offense Category</option>
+            </select>
+        </div>
+        <div id="dashboard">
+            <div id="column1">
+                <div id="barhisto"></div>
+                <div id="pcaplots">
+                    <div id="pcaplot1"></div>
+                    <div id="pcaplot2"></div>
+                </div>
+            </div>
+            <div id="column2">
+                <div id="map"></div>
+                <div id="pies">
+                    <div id="pie1"></div>
+                    <div id="pie2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="datavalue"></div>
+    </body>
+</html>

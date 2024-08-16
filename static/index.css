@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 665px;
+    width: 100%;
+    min-width: fit-content;
+}
+
+body, #dashboard, #column1, #column2, #pcaplots, #pies {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#dashboard, #pcaplots, #pies {
+    flex-direction: row;
+}
+
+body, #column1, #column2 {
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+    font-size: 20px;
+}
+
+#dropdown {
+    font-size: 18px;
+}
+
+#barhisto, #pcaplot1, #pcaplot2, #map, #pie1, #pie2 {
+    padding: 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
+#barhisto {
+    height: 275px;
+    width: 750px;
+}
+
+#pcaplot1, #pcaplot2 {
+    height: 300px;
+    width: 350px;
+}
+
+#map {
+    height: 425px;
+    width: 425px;
+}
+
+#pie1, #pie2 {
+    height: 150px;
+    width: 190px;
+}
+
+#datavalue {
+    pointer-events: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    padding: 5px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px
+}
+
+text {
+    font-size: 12px;
+}
+
+tspan {
+    font-size: 9px;
+}
