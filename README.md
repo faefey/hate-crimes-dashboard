@@ -2,7 +2,7 @@
 
 ![dashboard.png](dashboard.png)
 
-This is an interactive dashboard that displays NYC hate crime data combined with NYC precinct population data. The dashboard was built using d3.js and contains a bar chart, two biplots, a map, and two pie charts.
+This is an interactive dashboard that displays NYC hate crime data combined with NYC precinct population data. The dashboard was built using Flask and D3.js and contains a bar chart, two biplots, a map, and two pie charts.
 
 ## Features
 
@@ -63,7 +63,7 @@ This is an interactive dashboard that displays NYC hate crime data combined with
 
 1. Clone the repository.
 
-2. Run [app.py](app.py) to start the server.
+2. Run [app.py](app.py) to start the Flask server.
 
 3. Go to http://localhost:8000/ to view the dashboard.
 
